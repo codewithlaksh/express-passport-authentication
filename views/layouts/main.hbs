@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Auth App</div>
+        <div class="nav-items">
+            {{#if user}}
+            <a href="/auth/logout" class="auth-btn">Logout</a>
+            {{else}}
+            <a href="/auth/google" class="auth-btn">Login with Google</a>
+            <a href="/auth/github" class="auth-btn">Login with Github</a>
+            {{/if}}
+        </div>
+    </nav>
+    <main class="container">
+        {{{body}}}
+    </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<main class="welcome-section" role="main">
+    <header>
+        <h1>Welcome to Auth App</h1>
+        <p class="subtitle">A secure authentication system for your application</p>
+    </header>
+
+    <section class="auth-prompt" aria-label="Authentication Options">
+        <p>Please login to continue</p>
+        <div class="auth-actions">
+            <a href="/auth/google" class="auth-btn" role="button" aria-label="Login with Google">
+                <span class="btn-icon">🔒</span>
+                <span class="btn-text">Login with Google</span>
+            </a>
+            <a href="/auth/github" class="auth-btn" role="button" aria-label="Login with Google">
+                <span class="btn-icon">🔒</span>
+                <span class="btn-text">Login with Github</span>
+            </a>
+        </div>
+        <div class="auth-loading" hidden>
+            <p>Authenticating...</p>
+            <div class="loading-spinner"></div>
+        </div>
+    </section>
+</main>

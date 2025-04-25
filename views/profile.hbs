@@ -1,0 +1,22 @@
+<main class="welcome-section" role="main">
+    <header>
+        <h1>Profile Dashboard</h1>
+        <p class="subtitle">Manage your account information</p>
+    </header>
+
+    <section class="user-info" aria-label="User Information">
+        <div class="profile-header">
+            <div class="profile-image-container">
+                <img src="{{user.image}}" alt="Profile picture of {{user.username}}" class="profile-image">
+            </div>
+            <div class="profile-details">
+                <h2>Welcome, {{user.username}}</h2>
+            </div>
+        </div>
+        <div class="user-actions">
+            <a href="/auth/logout" class="logout-btn" role="button" aria-label="Logout from your account">
+                <span class="btn-text">Logout</span>
+            </a>
+        </div>
+    </section>
+</main>
